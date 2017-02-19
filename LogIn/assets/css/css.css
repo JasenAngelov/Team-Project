@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+#container {
+	background-color:buttonhighlight;
+	width: 1170px;
+	margin: 0 auto;
+	border: 2px dashed khaki;
+}
+
+main > form > .login {
+	margin: 0 auto;
+	color: green;
+	width: 30%;
+}
+main > form > .text {
+	margin: 0 auto;
+	color: green;
+	width: 30%;
+}
+
+main > form > article > input[type="submit"] {
+	background-color: khaki;
+	color: green;
+	width: 40%;
+	border-radius: 30%;	
+	box-shadow: 5px 10px 50px  #025;
+}
+
+
+main > form > article > input[type="submit"]:hover{
+	animation: moveBUT  1s  ease-in-out ;
+}
+
+@keyframes moveBUT {
+	from { transform:skewY(0deg); }
+    to   { transform:skewY(180deg);}
+	
+}
+
+main > form > article > input[type="text"]{
+	margin: 0 auto;
+	color: red;
+	width: 20%;
+}
+
+main > form > article > input[type="text"]:focus{
+	animation: mymove 2s 1;
+	width: 70%;
+}
+
+main > form > article > input[type="password"]{
+	margin: 0 auto;
+	color: red;
+	width: 20%;
+}
+
+main > form > article > input[type="password"]:focus{
+	animation: mymove 2s 1;
+	width: 70%;
+}
+
+@-webkit-keyframes mymove {
+    from {width: 20%;}
+    to {{width: 700%;}
+    
+}
+
